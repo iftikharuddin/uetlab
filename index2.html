@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calc</title>
+</head>
+<body>
+	<h1>Calculate it</h1>
+	<label for="input">Enter Value 1:</label>
+	<input id="input1" type="text" placeholder="enter value 1" onkeyup="addIt()">
+	<label for="input">Enter Value 2:</label>
+	<input id="input2" type="text" placeholder="enter value 2" onkeyup="addIt()">
+	<label>Result: </label>
+
+	<input id="result" type="text" onkeyup="addIt()">
+	
+	
+	<script>
+		function addIt(){
+			var value1 = document.getElementById('input1').value;
+			var value2 = document.getElementById('input2').value;
+
+			var result = parseInt(value1) + parseInt(value2);
+			
+			document.getElementById('result').value = result;
+		}
+		
+
+	</script>
+</body>
+</html>

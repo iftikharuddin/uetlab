@@ -1,3 +1,5 @@
-// Lab task
-var id = document.getElementById('#box');
-id.style.color = 'red';
+// Lab task 2
+var idObj = document.getElementById("box");
+console.log(idObj);
+
+
